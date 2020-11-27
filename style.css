@@ -7,7 +7,7 @@
     width: 1200px;
     display: flex;
     margin: 0 auto;
-  }
+}
 
 .col-md-3 {
     width: 25%;
@@ -309,4 +309,65 @@ header {
 .linetext div > a {
     font-size: 20px;
     color: #999999;
+}
+
+
+/* ADAPTATION */
+
+@media(max-width:320px) {
+    .container {
+        width: auto;
+        height: auto;
+        display: flex;
+        margin: 0 ;
+    }
+
+    .kon {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    header {
+        display: flex;
+        justify-content:center ;
+        height: auto;
+        padding: 5px;
+        width: auto;
+        background-color: #333333;
+        flex-direction: column;
+    }
+
+    /* LOGOPLACE */
+
+    .logoplace {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    /* MENUPLACE */
+
+    .menuplace {
+        display: flex;
+        justify-content: flex-start;
+        align-content: space-between;
+        flex-direction: column;
+    }
+
+    /* SEARCHPLACE */
+    .searchplace {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 10px;
+        flex-direction: column;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
