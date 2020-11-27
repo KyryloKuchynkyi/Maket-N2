@@ -314,7 +314,7 @@ header {
 
 /* ADAPTATION */
 
-@media(max-width:320px) {
+@media(max-width:426px) {
     .container {
         width: auto;
         height: auto;
