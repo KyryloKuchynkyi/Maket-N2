@@ -1,42 +1,48 @@
-body {
-    width: 1900px;
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
     display: flex;
-    flex-direction: column;
+    margin: 0 auto;
+  }
+
+.col-md-3 {
+    width: 25%;
+}
+.col-md-6 {
+    width: 50%;
+}
+.col-md-12 {
+    width: 100%;
 }
 
 header {
-    width: 1900px;
     display: flex;
+    padding: 25px;
     justify-content:space-between ;
     height: 80px;
     background-color: #333333;
 }
 
-.logoplace {
-    width: 33%;
-}
 
-.menuplace {
-    width: 33%;
-}
-
-.searchplace {
-    width: 33%;
-}
-
-/* LOGO */
+/* LOGOPLACE */
 
 .logoplace {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
 }
+
 .logo {
-    padding-right: 200px;
-    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-/* MENU */
+/* MENUPLACE */
 
 .menuplace {
     display: flex;
@@ -72,24 +78,20 @@ header {
     padding: 10px;
 }
 
-/* SEARCH */
-
+/* SEARCHPLACE */
 .searchplace {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    
+    justify-content: flex-end;
 }
-
 .search {
+    display: flex;
     border: 2px solid #999999;
     border-radius: 5px;
     width: 195px;
     height: 30px;
     background-image:url(images/glass.png);
     background-repeat: no-repeat;
-    background-position: 155px -8px;
+    background-position: 150px -10px;
 }
 
 .search input {
@@ -104,6 +106,7 @@ header {
     font-weight: bold;
 }
 
+
 /* MAIN */
 
 .main{
@@ -115,29 +118,36 @@ header {
 
 .marketplace {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 1900px;
+    width: auto;
     height: 650px;
     background-image: url(images/tree.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .box {
-    padding-left: 332px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.box div {
-    padding-top: 30px;
+.boxcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
 }
 
 .general {
     font-size: 32px;
     color: white;
+    padding-bottom: 35px;
 }
 
 .ngl {
     color: #9999cc;
+    padding-bottom: 40px;
 }
 
 .marketbut button {
@@ -147,6 +157,8 @@ header {
     border: 2px solid white;
     border-radius: 5px;
 }
+
+
 
 .marketbut button > a {
     color: white;
@@ -163,25 +175,23 @@ header {
 /* N2 */
 
 .modest {
-    display: flex;
-    flex-direction: row;
-    width: 1900px;
-    height: 615px;
     background-color: white;
-    border-bottom: 1px solid #999999;
+    display: flex;
+    width: auto;
+    height: 610px;
+    border-bottom: 1px solid silver;
 }
 
 .firstbox {
     display: flex;
-    width: 50%;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    padding-top: -20px;
     flex-wrap: wrap;
 }
 
-.text > div {
-    padding-left: 336px;
-    padding-top: 60px;
+.text {
+
 }
 
 .textmodest {
@@ -196,20 +206,17 @@ header {
 .textinfo {
     font-size: 20px;
     color: #999999;
+    padding-top: 40px;
 }
 
 .butmenu {
+    padding-top: 55px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding-left: 336px;
-    padding-top: 20px;
 }
-
 .butmenu div {
-    width: 60px;
-    height: 60px;
-    padding-right: 2px;
+    padding-left: 1px;
 }
 
 .butmenu div button {
@@ -223,7 +230,6 @@ header {
     background-position: 6px 6px;
     border: none;
 }
-
 .twiter {
     background-image: url(images/twiter.png);
     background-color:  #999999be;
@@ -258,9 +264,8 @@ header {
 
 .secondbox {
     display: flex;
-    width: 50%;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     flex-direction: column;
     padding-left: 15px;
 }
@@ -268,7 +273,11 @@ header {
 .line {
     display: flex;
     flex-direction: row;
-    padding-top: 60px;
+    padding-top: 40px;
+}
+
+.line:first-child {
+    padding-top: 86px;
 }
 
 .number {
@@ -276,6 +285,7 @@ header {
     height: 50px;
     background-color: #33cc99;
     margin-right: 10px;
+    padding-left: 26px;
 }
 
 .number  a {
@@ -283,12 +293,9 @@ header {
     justify-content: center;
     align-items: center;
     padding-top: 15px;
+    padding-right: 20px;
     font-size: 20px;
     color: white;
-}
-
-.linetext {
-    margin-left: 20px;
 }
 
 .linetext div {
