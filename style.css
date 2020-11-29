@@ -314,7 +314,7 @@ header {
 
 /* ADAPTATION */
 
-@media(max-width:426px) {
+@media(max-width: 425px) {
     .container {
         width: auto;
         height: auto;
@@ -353,7 +353,7 @@ header {
     .menuplace {
         display: flex;
         justify-content: flex-start;
-        align-content: space-between;
+        align-content: flex-start;
         flex-direction: column;
     }
 
@@ -369,5 +369,120 @@ header {
         display: flex;
         flex-direction: column;
     }
+
+    /* MAIN */
+
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .marketplace {
+        display: flex;
+        width: auto;
+        height: 388px;
+        background-image: url(images/tree.png);
+        background-size: 100% 425px;
+        background-repeat: no-repeat;
+    }
+
+    .boxcontent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 100px;
+        padding-left: 5px;
+    }
+
+    /* N2 */
+
+    .modest {
+        background-color: white;
+        display: flex;
+        width: auto;
+        height: auto;
+        border-bottom: 1px solid silver;
+    }
+
+    .firstbox {
+        display: flex;
+        justify-content: center;
+        padding-left: 80px;
+        flex-direction: column;
+    }
+
+    .text {
+        
+    }
+
+    .textmodest {
+        font-size: 20px;
+        padding-left: 80px;
+    }
     
+    .textmodest > a {
+        border-left: 5px solid #cccccc;
+        padding-left: 5px;
+    }
+    
+    .textinfo {
+        font-size: 15px;
+        color: #999999;
+        padding-top: 20px;
+        padding-left: 80px;
+    }
+
+    .butmenu {
+        padding-left: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .butmenu div button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .facebook {
+        background-image: url(images/facebook.png);
+        background-color: #999999be;
+        background-position: -8px -8px;
+        border: none;
+    }
+    .twiter {
+        background-image: url(images/twiter.png);
+        background-color:  #999999be;
+        background-position: -8px -8px;
+        border: none;
+    }
+    
+    .google {
+        background-image: url(images/google.png);
+        background-color:  #999999be;
+        background-position: -8px -8px;
+        border: none;
+    }
+    
+    .basket {
+        background-image: url(images/basket.png);
+        background-color:  #999999be;
+        background-position: -8px -8px;
+        border: none;
+    }
+    
+    .be {
+        background-image: url(images/Be.png);
+        background-color:  #999999be;
+        background-position: -8px -8px;
+        border: none;
+    }
+
+    .modest > .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
 }
