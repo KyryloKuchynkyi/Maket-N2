@@ -1,224 +1,154 @@
 
-* {
-    box-sizing: border-box;
-}
-
-.container {
-    width: 1200px;
-    display: flex;
-    margin: 0 auto;
-}
-
-.col-md-3 {
-    width: 25%;
-}
-.col-md-6 {
-    width: 50%;
-}
-.col-md-12 {
-    width: 100%;
-}
-
-header {
-    display: flex;
-    padding: 25px;
-    justify-content:space-between ;
-    height: 80px;
+.header {
     background-color: #333333;
-}
-
-
-/* LOGOPLACE */
-
-.logoplace {
+    height: 80px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
 }
 
 .logo {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
 }
 
-/* MENUPLACE */
+.row {
+    align-items: center;
+}
 
-.menuplace {
+.submenu {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-around;
 }
 
-.menuplace div a  {
+.silver {
     text-decoration: none;
     color: #999999;
 }
 
-.menuplace div:first-child {
-    padding: 10px;
-    border: 2px solid #33cc99;
+.silver:hover {
+    border: 2px solid #999999;
     border-radius: 5px;
+    padding: 5px;
 }
 
-.menuplace div:first-child > a {
+.green {
+    text-decoration: none;
     color: #33cc99;
-}
-
-.menuplace div:hover {
-    border: 2px solid #999999;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.menuplace div:first-child:hover {
     border: 2px solid #33cc99;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
 }
 
-/* SEARCHPLACE */
-.searchplace {
+.bordersearch {
     display: flex;
-    justify-content: flex-end;
-}
-.search {
-    display: flex;
-    border: 2px solid #999999;
-    border-radius: 5px;
-    width: 195px;
     height: 30px;
-    background-image:url(images/glass.png);
+    background-image: url(images/glass.png) ;
     background-repeat: no-repeat;
-    background-position: 150px -10px;
+    background-position: 123px -10px;
+    border: 2px solid  #999999;  
 }
 
-.search input {
+.bordersearch > input {
     background-color: transparent;
+    width: 20pxs;
     border: none;
-    height: 30px;
-}
-
-.search ::placeholder {
-    color: #999999;
-    padding-left: 3px;
-    font-weight: bold;
+    padding-left: 10px;
 }
 
 
-/* MAIN */
+/* N2 MAIN */
 
-.main{
-    display: flex;
-    flex-direction: column;
-}
+/* Slaider */
 
-/* N1 */
-
-.marketplace {
-    display: flex;
-    width: auto;
-    height: 650px;
+.slaider {
+    height: 660px;
     background-image: url(images/tree.png);
-    background-size: 100%;
     background-repeat: no-repeat;
+    background-size: 100% 660px;
 }
-
-.box {
+.market {
+    height: 100%;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
 }
-
-.boxcontent {
+.marketinfo {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    padding-bottom: 100px;
+}
+
+.marketinfo div {
+    padding-top: 40px;
 }
 
 .general {
-    font-size: 32px;
+    font-size: 26px;
     color: white;
-    padding-bottom: 35px;
 }
 
 .ngl {
-    color: #9999cc;
-    padding-bottom: 40px;
+    color: #999999;
 }
 
 .marketbut button {
-    width: 122px;
-    height: 42px;
+    width: 120px;
+    height: 40px;
     background-color: transparent;
     border: 2px solid white;
     border-radius: 5px;
 }
 
-
-
-.marketbut button > a {
+.marketbut button a {
     color: white;
 }
 
 .marketbut button:hover {
-    width: 122px;
-    height: 42px;
     background-color: #33cc99;
     border: 2px solid #33cc99;
     border-radius: 5px;
 }
 
-/* N2 */
+/* Modest */
 
 .modest {
-    background-color: white;
-    display: flex;
-    width: auto;
     height: 610px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100% 660px;
     border-bottom: 1px solid silver;
 }
 
-.firstbox {
+.modestinfo {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    padding-top: -20px;
-    flex-wrap: wrap;
 }
 
-.text {
-
+.modestinfo div {
+    padding-top: 30px;
 }
 
-.textmodest {
-    font-size: 45px;
+.modestinfo div:first-child {
+    padding-bottom: 70px;
 }
 
-.textmodest > a {
-    border-left: 10px solid #cccccc;
-    padding-left: 5px;
+.genmodestinfo a {
+    font-size: 40px;
+    padding-left: 10px;
+    border-left: 10px solid silver;
 }
 
-.textinfo {
-    font-size: 20px;
+.textmodestinfo {
     color: #999999;
-    padding-top: 40px;
 }
 
 .butmenu {
-    padding-top: 55px;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-}
-.butmenu div {
-    padding-left: 1px;
 }
 
+.butmenu div {
+    padding-right: 2px;
+}
 .butmenu div button {
     width: 60px;
     height: 60px;
@@ -262,14 +192,6 @@ header {
     background-color: #9999998a;
 }
 
-.secondbox {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    padding-left: 15px;
-}
-
 .line {
     display: flex;
     flex-direction: row;
@@ -277,7 +199,7 @@ header {
 }
 
 .line:first-child {
-    padding-top: 86px;
+    padding-top: 100px;
 }
 
 .number {
@@ -298,191 +220,87 @@ header {
     color: white;
 }
 
-.linetext div {
-    padding-top: 10px;
+.linetext div:last-child {
+    padding-top: 5px;
 }
 
 .linetext div > h3 {
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .linetext div > a {
-    font-size: 20px;
     color: #999999;
 }
 
 
-/* ADAPTATION */
+/* team */
 
-@media(max-width: 425px) {
-    .container {
-        width: auto;
-        height: auto;
-        display: flex;
-        margin: 0 ;
-    }
-
-    .kon {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    header {
-        display: flex;
-        justify-content:center ;
-        height: auto;
-        padding: 5px;
-        width: auto;
-        background-color: #333333;
-        flex-direction: column;
-    }
-
-    /* LOGOPLACE */
-
-    .logoplace {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    /* MENUPLACE */
-
-    .menuplace {
-        display: flex;
-        justify-content: flex-start;
-        align-content: flex-start;
-        flex-direction: column;
-    }
-
-    /* SEARCHPLACE */
-    .searchplace {
-        display: flex;
-        align-items: flex-start;
-        padding-top: 10px;
-        flex-direction: column;
-    }
-
-    .header {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* MAIN */
-
-    .main{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .marketplace {
-        display: flex;
-        width: auto;
-        height: 388px;
-        background-image: url(images/tree.png);
-        background-size: 100% 425px;
-        background-repeat: no-repeat;
-    }
-
-    .boxcontent {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding-bottom: 100px;
-        padding-left: 5px;
-    }
-
-    /* N2 */
-
-    .modest {
-        background-color: white;
-        display: flex;
-        width: auto;
-        height: auto;
-        border-bottom: 1px solid silver;
-    }
-
-    .firstbox {
-        display: flex;
-        justify-content: center;
-        padding-left: 80px;
-        flex-direction: column;
-    }
-
-    .text {
-        
-    }
-
-    .textmodest {
-        font-size: 20px;
-        padding-left: 80px;
-    }
-    
-    .textmodest > a {
-        border-left: 5px solid #cccccc;
-        padding-left: 5px;
-    }
-    
-    .textinfo {
-        font-size: 15px;
-        color: #999999;
-        padding-top: 20px;
-        padding-left: 80px;
-    }
-
-    .butmenu {
-        padding-left: 80px;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    .butmenu div button {
-        width: 30px;
-        height: 30px;
-    }
-
-    .facebook {
-        background-image: url(images/facebook.png);
-        background-color: #999999be;
-        background-position: -8px -8px;
-        border: none;
-    }
-    .twiter {
-        background-image: url(images/twiter.png);
-        background-color:  #999999be;
-        background-position: -8px -8px;
-        border: none;
-    }
-    
-    .google {
-        background-image: url(images/google.png);
-        background-color:  #999999be;
-        background-position: -8px -8px;
-        border: none;
-    }
-    
-    .basket {
-        background-image: url(images/basket.png);
-        background-color:  #999999be;
-        background-position: -8px -8px;
-        border: none;
-    }
-    
-    .be {
-        background-image: url(images/Be.png);
-        background-color:  #999999be;
-        background-position: -8px -8px;
-        border: none;
-    }
-
-    .modest > .container {
-        display: flex;
-        flex-direction: column;
-    }
-    
-
+.team {
+    height: 650px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100% 650px;
+    border-bottom: 1px solid silver;
 }
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+
+.meet {
+    font-size: 40px;
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.meet a {
+    border-left: 10px solid #999999;
+    padding-left: 10px;
+    margin-left: 15px;
+}
+
+.photoplace {
+    display: flex;
+    flex-direction: row;
+}
+
+.col-md-3 img {
+    width: 203px;
+    height: 242px;
+    border: none;
+}
+
+.infophoto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    width: 203;
+    height: 70px;
+    background-color: rgba(192, 192, 192, 0.671);
+    border: none;
+}
+
+.infophoto a:last-child {
+    padding-top: 5px;
+    color: #999999;
+}
+
+
+@media(max-width: 426px) {
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+    main .modest .column {
+        padding-top: 394px;
+    }
+}
+
+
+/* Добавить педдинг в каждый селектион  */

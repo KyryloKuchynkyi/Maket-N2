@@ -5,91 +5,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="grid.css"/>
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-   <header>
-       <div class="container kon">
-           <div class="col-md-3 logoplace">
-               <div class="logo">
+    <header class="header">
+        <div class="container">
+            <div class="row header-row column">
+                <div class="col-md-2 col-xs-12 logo">
                    <img src="images/logo.png">
                 </div>
-           </div>
-           <div class="col-md-6 menuplace">
-                <div><a href="">HOME</a></div>
-                <div><a href="">ABOUT</a></div>
-                <div><a href="">WORK</a></div>
-                <div><a href="">TEAM</a></div>
-                <div><a href="">SERVICES</a></div>
-                <div><a href="">FEATURES</a></div>
-                <div><a href="">CONTACT</a></div> 
-           </div>
-           <div class="col-md-3 searchplace">
-               <div class="search">
-                   <input type="search" placeholder="SEARCH">
-               </div>
-           </div>
-       </div>
-   </header>
-   <main>
-        <div class="marketplace">
-            <div class="container">
-                <div class="col-md-12 box">
-                    <div class="boxcontent">
-                        <div class="general"><a>WELCOME TO OUR MARKETPLACE</a></div>
-                        <div class="ngl"><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quis quia sint pr</a></div>
-                        <div class="marketbut">
-                            <button><a>VIEW MORE</a></button>
-                            <button><a>VIDEO TOUR</a></button>
-                        </div>
+                <div class="col-md-8 col-xs-12 menu">
+                    <nav>
+                        <ul class="submenu">
+                            <li><a href="" class="green">HOME</a></li>
+                            <li><a href="" class="silver">ABOUT</a></li>
+                            <li><a href="" class="silver">WORK</a></li>
+                            <li><a href="" class="silver">TEAM</a></li>
+                            <li><a href="" class="silver">SERVICES</a></li>
+                            <li><a href="" class="silver">FEATURES</a></li>
+                            <li><a href="" class="silver">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-2 col-xs-12 search">
+                    <div class="bordersearch">
+                        <input type="search" placeholder="SEARCH">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modest">
-            <div class="container">
-                <div class="col-md-6 firstbox">
-                    <div class="text">
-                        <div class="textmodest"><a>WE ARE MODEST.</a></div>
-                        <div class="textinfo"><a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta corporis qui, totam nobis ipsam quisquam aperiam id officia nemo at, reiciendis provident earum magni, aut ratione recusandae facere accusamus tempora?</a></div>
-                        <div class="textinfo"><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quasi tenetur maiores molestiae cum odit, dolorum reprehenderit ducimus quam, assumenda praesentium numquam, dicta eveniet sed cupiditate delectus voluptatibus repudiandae ad?</a></div>
-                    </div>
-                    <div class="butmenu">
-                        <div><button class="facebook hov"></button></div>
-                        <div><button class="twiter hov"></button></div>
-                        <div><button class="google hov"></button></div>
-                        <div><button class="basket hov"></button></div>
-                        <div><button class="be hov"></button></div>
-                    </div>
-                </div>
-                <div class="col-md-6 secondbox">
-                    <div class="line">
-                        <div class="number"><a>01</a></div>
-                        <div class="linetext">
-                            <div><h3>DEDICATION TO THE CUSTOMERS</h3></div>
-                            <div><a>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt omnis eligendi quasi</a></div>
-                        </div>
-                    </div>
-                    <div class="line">
-                        <div class="number"><a>01</a></div>
-                        <div class="linetext">
-                            <div><h3>WORKING CLOSELY WITH OUR CLIENTS</h3></div>
-                            <div><a>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt omnis eligendi quasi</a></div>
-                        </div>
-                    </div>
-                    <div class="line">
-                        <div class="number"><a>01</a></div>
-                        <div class="linetext">
-                            <div><h3>INCREASE HAPPINESS</h3></div>
-                            <div><a>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt omnis eligendi quasi</a></div>
+    </header>
+    <main class="main">
+        <section class="slaider">
+            <div class="container market">
+                <div class="row column">
+                    <div class="col-md-12 col-xs-12">
+                        <div class="marketinfo">
+                            <div class="general"><a>WELCOME TO OUR MARKETPLACE</a></div>
+                            <div class="ngl"><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quis quia sint pr</a></div>
+                            <div class="marketbut">
+                                <button><a>VIEW MORE</a></button>
+                                <button><a>VIDEO TOUR</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-   </main>
-   <footer></footer>
+        </section>
+        <section class="modest">
+            <div class="container market">
+                <div class="row column">
+                    <div class="col-md-7 col-xs-12">
+                        <div class="modestinfo">
+                            <div class="genmodestinfo"><a>WE ARE MODEST.</a></div>
+                            <div class="textmodestinfo"><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa corrupti, quisquam quo odio, magnam facere nesciunt blanditiis labore atque illo iure libero ducimus. Veritatis quod laboriosam labore quaerat optio. Eos.</a></div>
+                            <div class="textmodestinfo"><a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate culpa nobis aliquam totam iste et fugiat, tempore aspernatur reprehenderit quisquam delectus aut veniam, autem nam eum beatae hic iusto sapiente..</a></div>
+                            <div class="butmenu">
+                                <div><button class="facebook hov"></button></div>
+                                <div><button class="twiter hov"></button></div>
+                                <div><button class="google hov"></button></div>
+                                <div><button class="basket hov"></button></div>
+                                <div><button class="be hov"></button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-xs-12 lines">
+                        <div class="line">
+                            <div class="number"><a>01</a></div>
+                            <div class="linetext">
+                                <div><h3>DEDICATION TO THE CUSTOMERS</h3></div>
+                                <div><a>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt omnis eligendi quasi</a></div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="number"><a>01</a></div>
+                            <div class="linetext">
+                                <div><h3>WORKING CLOSELY WITH OUR CLIENTS</h3></div>
+                                <div><a>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt omnis eligendi quasi</a></div>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="number"><a>01</a></div>
+                            <div class="linetext">
+                                <div><h3>INCREASE HAPPINESS</h3></div>
+                                <div><a>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt omnis eligendi quasi</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team">
+            <div class="container">
+                <div class="row column boxes">
+                    <div class="col-md-2 meet col-xs-12"><a>MEET THE TEAM</a></div>
+                    <div class="col-md-10 col-xs-12 photoplace column">
+                        <div class="col-md-3 col-xs-12 allaboutphoto">
+                            <div class="image">
+                                <img src="images/photo1.png">
+                            </div>
+                            <div class="infophoto">
+                                <a>GLORIA BROMLEY</a>
+                                <a>CEO and Founder</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 allaboutphoto">
+                            <div class="image">
+                                <img src="images/photo2.png">
+                            </div>
+                            <div class="infophoto">
+                                <a>GLORIA BROMLEY</a>
+                                <a>CEO and Founder</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 allaboutphoto">
+                            <div class="image">
+                                <img src="images/photo3.png">
+                            </div>
+                            <div class="infophoto">
+                                <a>GLORIA BROMLEY</a>
+                                <a>CEO and Founder</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 allaboutphoto">
+                            <div class="image">
+                                <img src="images/photo4.png">
+                            </div>
+                            <div class="infophoto">
+                                <a>GLORIA BROMLEY</a>
+                                <a>CEO and Founder</a>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work">
+            <div class="container">
+                <div class="row column">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"></footer>
 </body>
 </html>
