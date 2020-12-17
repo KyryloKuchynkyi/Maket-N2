@@ -367,6 +367,300 @@
     color: white;
 }
 
+/* WHAT WE DO */
+
+.what {
+    height: 900px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100% 900px;
+}
+
+.sil > a {
+    color: #333333;
+}
+
+.img-work {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+
+
+.boxwhat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-position: center;
+}
+
+.boxwhat2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.boxwhat h3,.boxwhat2 h3 {
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.a-what {
+    color: #333333;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.one {
+    background-image: url(images/work1.png);
+    background-repeat: no-repeat;
+}
+
+.two {
+    background-image: url(images/work2.png);
+    background-repeat: no-repeat;
+}
+
+.three {
+    background-image: url(images/work3.png);
+    background-repeat: no-repeat;
+}
+
+.four {
+    background-image: url(images/work4.png);
+    background-repeat: no-repeat;
+}
+
+.five {
+    background-image: url(images/work1.png);
+    background-repeat: no-repeat;
+}
+
+.six {
+    background-image: url(images/work2.png);
+    background-repeat: no-repeat;
+}
+
+.seven {
+    background-image: url(images/work3.png);
+    background-repeat: no-repeat;
+}
+
+.eight {
+    background-image: url(images/work4.png);
+    background-repeat: no-repeat;
+}
+
+
+/* FEATURES */
+
+.features {
+    height: 730px;
+    background-color: #333333;
+}
+
+.features-img img {
+    width: 90%;
+    height: 90%;
+    margin-bottom: 30px;
+}
+
+.h3-features {
+    font-weight: bold;
+    color: rgba(192, 192, 192, 0.753);
+    padding-bottom: 10px;
+}
+.a-features {
+    width: 90%;
+}
+
+.a-features a {
+    color: rgba(192, 192, 192, 0.753);
+    line-height: 1.4;
+}
+
+/* STAY */
+
+.stay {
+    height: 860px;
+}
+
+.info-stay {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+    width: 50%;
+}
+
+.h3-stay {
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.a-stay {
+    color:  #333333;
+    line-height: 1.4;
+    padding-top: 30px;
+}
+
+.free {
+    margin-top: 50px;
+    height: 228px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.message {
+    width: 150px;
+    height: 40px;
+    background-color: #33cc99;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}
+
+
+
+
+/* SEND BOX */
+
+.modal {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    display: none;
+}
+
+.modal-block {
+    width: 560px;
+    height: 430px;
+    margin: 200px auto;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name,.email {
+    background-color: #66666638;
+    border: none;
+    width: 240px;
+    height: 45px;
+}
+
+.masage {
+    width: 495px;
+    height: 150px;
+    background-color: #66666638;
+    border: none;
+}
+
+.send {
+    margin: 15px
+}
+
+.send button {
+    width: 150px;
+    height: 40px;
+    background-color: #33cc99;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-close {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 15px;
+}
+
+form {
+    position: relative;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+    height: 95px;
+    background-color: #333333;
+}
+
+.footer-row {
+    display: flex;
+    align-items: center;
+}
+
+.xxt a {
+    color:white;
+}
+
+.end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.facebook2 {
+    background-image: url(images/facebook.png);
+    background-color: transparent;
+    background-position: 6px 6px;
+    border: none;
+}
+.twiter2 {
+    background-image: url(images/twiter.png);
+    background-color:  transparent;
+    background-position: 6px 6px;
+    border: none;
+}
+
+.google2 {
+    background-image: url(images/google.png);
+    background-color:  transparent;
+    background-position: 6px 6px;
+    border: none;
+}
+
+.basket2 {
+    background-image: url(images/basket.png);
+    background-color:  transparent;
+    background-position: 6px 6px;
+    border: none;
+}
+
+.be2 {
+    background-image: url(images/Be.png);
+    background-color:  transparent;
+    background-position: 6px 6px;
+    border: none;
+}
+
 @media(max-width: 426px) {
     .container {
         height: 100%;
@@ -432,7 +726,26 @@
     .be {
         background-position: 0 0;
     }
+
+    .linework {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work {
+        margin-top: 1750px;
+    }
+
+    .boxwork img {
+        width: 260px;
+        height: 230px;
+    }
+
+    .what {
+        margin-top: 750px
+    }
 }
+
 
 
 /* Добавить педдинг в каждый селектион  */
